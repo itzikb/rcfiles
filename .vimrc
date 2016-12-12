@@ -1,5 +1,22 @@
-" load pathogen
-execute pathogen#infect()
+" Plugins start
+set nocompatible " be iMproved, required
+filetype off " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'baskerville/bubblegum'
+
+filetype plugin indent on
+
+call vundle#end() " required
+" Plugins end 
+
+" set colorscheme
+colorscheme bubblegum-256-dark
 
 " syntax highlighting
 " syntax enable
@@ -9,12 +26,6 @@ syntax on
 
 " enable file type detection
 filetype on
-
-" set theme
-set t_Co=256
-set background=dark
-set encoding=utf-8
-colorscheme bubblegum
 
 " show number lines the title of the window and the ruler
 set number
