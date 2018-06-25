@@ -15,14 +15,24 @@ filetype plugin indent on
 call vundle#end() " required
 " Plugins end 
 
+
 " set colorscheme
 colorscheme bubblegum-256-dark
 
 " syntax highlighting
-" syntax enable
+syntax enable
 
+" show the matching part of the pair for [] {} and ()
+set showmatch
+
+" set tabs to have 4 spaces
+set ts=4
+
+" expand tabs into spaces
+set expandtab
+
+" enable all Python syntax highlighting features
 let python_highlight_all=1
-syntax on
 
 " enable file type detection
 filetype on
@@ -53,3 +63,7 @@ nnoremap <CR> :noh<CR><CR>
 " open new slip panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
+
+" indent when moving to the next line while writing code
+set autoindent
+
