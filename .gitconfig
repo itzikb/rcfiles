@@ -1,0 +1,5 @@
+[user]
+	name = Joe Doe
+	email = joe@example.com
+[core]
+	editor = vim
