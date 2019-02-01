@@ -9,11 +9,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'baskerville/bubblegum'
+Plugin 'ntpeters/vim-better-whitespace'
 
 filetype plugin indent on
 
 call vundle#end() " required
-" Plugins end 
+" Plugins end
 
 
 " set colorscheme
@@ -66,4 +67,3 @@ set splitright
 
 " indent when moving to the next line while writing code
 set autoindent
-
