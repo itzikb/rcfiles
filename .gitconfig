@@ -3,3 +3,12 @@
 	email = joe@example.com
 [core]
 	editor = vim
+[alias]
+    l  = log
+    c  = commit
+    ca = commit --amend
+	ns = show --name-only
+    p  = pull
+    b = branch
+    cb = checkout -b
+    co = checkout
